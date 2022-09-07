@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gold</title>
+    <link rel="shortcut icon" href="./A0515FF6-D80D-42D3-BA98-2B88BAB6E9CB-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="index5.css">
+    <script src="./plotly.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
+        <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
+        <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
+          <img
+               class="logo"
+               src="./logo.png" 
+               alt="logo">
+          <div class="ms-2">
+            <h5 class="fs-6 mb-0">
+              <a class="text-decoration-none" href="#">What is exposed</a>
+            </h5>
+            <p class="mt-1 mb-0">A detailed study of the attitudes of individuals in Kuwait towards gold.</p>
+          </div>
+        </div>
+      
+        <div class="search position-relative text-center px-4 py-3 mt-2">
+          <input type="text" class="form-control w-100 border-0 bg-transparent" placeholder="Search here">
+          <!-- <img src="./search_FILL0_wght400_GRAD0_opsz48.svg"> -->
+          <!-- <button 
+          border-radius= "50%",
+          width= "60px"
+          height="60px" ,
+          background="#3c3f58"   type="submit"><img width="10px" border-radius="50%" src="./search_FILL0_wght400_GRAD0_opsz48.svg" alt="search"></button> -->
+        </div>
+      
+        <ul class="categories list-unstyled">
+          <li class="has-dropdown">
+            <i class="uil-estate fa-fw"></i><a href="#"> Dashboard</a>
+            <ul class="sidebar-dropdown list-unstyled">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">ipsum dolor</a></li>
+              <li><a href="#">dolor ipsum</a></li>
+              <li><a href="#">amet consectetur</a></li>
+              <li><a href="#">ipsum dolor sit</a></li>
+            </ul>
+          </li>
+          <li class="">
+            <i class="uil-folder"></i><a href="#"> File manager</a>
+          </li>
+          <li class="has-dropdown">
+            <i class="uil-calendar-alt"></i><a href="#"> Calender</a>
+            <ul class="sidebar-dropdown list-unstyled">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">ipsum dolor</a></li>
+              <li><a href="#">dolor ipsum</a></li>
+              <li><a href="#">amet consectetur</a></li>
+              <li><a href="#">ipsum dolor sit</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <i class="uil-envelope-download fa-fw"></i><a href="#"> Mailbox</a>
+            <ul class="sidebar-dropdown list-unstyled">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">ipsum dolor</a></li>
+              <li><a href="#">dolor ipsum</a></li>
+              <li><a href="#">amet consectetur</a></li>
+              <li><a href="#">ipsum dolor sit</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <i class="uil-shopping-cart-alt"></i><a href="#"> Ecommerce</a>
+            <ul class="sidebar-dropdown list-unstyled">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">ipsum dolor</a></li>
+              <li><a href="#">dolor ipsum</a></li>
+              <li><a href="#">amet consectetur</a></li>
+              <li><a href="#">ipsum dolor sit</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <i class="uil-bag"></i><a href="#"> Projects</a>
+            <ul class="sidebar-dropdown list-unstyled">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">ipsum dolor</a></li>
+              <li><a href="#">dolor ipsum</a></li>
+              <li><a href="#">amet consectetur</a></li>
+              <li><a href="#">ipsum dolor sit</a></li>
+            </ul>
+          </li>
+          <li class="">
+            <i class="uil-setting"></i><a href="#"> Settings</a>
+            <ul class="sidebar-dropdown list-unstyled">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">ipsum dolor</a></li>
+              <li><a href="#">dolor ipsum</a></li>
+              <li><a href="#">amet consectetur</a></li>
+              <li><a href="#">ipsum dolor sit</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <i class="uil-chart-pie-alt"></i><a href="#"> Components</a>
+            <ul class="sidebar-dropdown list-unstyled">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">ipsum dolor</a></li>
+              <li><a href="#">dolor ipsum</a></li>
+              <li><a href="#">amet consectetur</a></li>
+              <li><a href="#">ipsum dolor sit</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <i class="uil-panel-add"></i><a href="#"> Charts</a>
+            <ul class="sidebar-dropdown list-unstyled">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">ipsum dolor</a></li>
+              <li><a href="#">dolor ipsum</a></li>
+              <li><a href="#">amet consectetur</a></li>
+              <li><a href="#">ipsum dolor sit</a></li>
+            </ul>
+          </li>
+          </ul>
+         </aside>
+<section> 
+  <h2 class="h22" >Dashboard</h2>
+  
+    <div id="graphDiv" class="pointChart"></div>
+    <br>
+    <br>
+    <br>
+    <div id="myDiv"></div>
+    <br>
+    <div id="Div"></div>
+    <table class="rwd-table" >
+      <tr>
+        <th>Kuwait</th>
+        <th>lowest</th>
+        <th>Year</th>
+        <th>highest</th>
+      </tr>
+      <tr>
+        <td data-th="Kuwait">Inflation rate</td>
+        <td data-th="lowest">-1.42</td>
+        <td data-th="Year">1995-2022</td>
+        <td data-th="highest">11.70</td>
+      </tr>
+      <tr>
+        <th>Kuwait</th>
+        <th>lowest</th>
+        <th>Year</th>
+        <th>highest</th>
+      </tr>
+      <tr>
+        <td data-th="Kuwait">Gold reserves</td>
+        <td data-th="lowest">13.00</td>
+        <td data-th="Year">2002-2022</td>
+        <td data-th="highest">104.51</td>
+      </tr>
+      <tr>
+        <th>Kuwait</th>
+        <th>lowest</th>
+        <th>Year</th>
+        <th>highest</th>
+      </tr>
+      <tr>
+        <td data-th="Kuwait">Consumer prices(CPI)</td>
+        <td data-th="lowest">65.30</td>
+        <td data-th="Year">2001-2022</td>
+        <td data-th="highest">125.40</td>
+      </tr>
+      </table>
+    <br>
+    <div class="ex"><h3>Although gold is an effective long-term hedge against inflation, its effectiveness in the shorter horizons depends on how long-term expectations for inflation and monetary policy evolve, and that long-term real returns will rise somewhat over the next few years, which should be enough to reduce The price of gold, according to an analysis by “Capital Economics”.</h3></div>
+    
+    <br>
+    <br>
+    
+    <h3>Gold reduces the ability of governments or banks to cause price inflation by over-issuing fiat currencies, and it also creates stability in international trade by providing a stable pattern of exchange rates.<br>It is noted that there is a difference in the consumer purposes of gold between industrialized and non-industrial countries.  In the United States and European countries, for example, industrial consumption outperforms domestic consumption, says Dr. Qalawun.  Gold is used for many industrial purposes, such as making computers, smart phones, medical equipment, space exploration equipment, etc.  In Arab countries, for example, “domestic consumption is superior to industrial consumption, as gold is used in weddings and gifts, and is considered a small wealth and a safe haven for saving, especially for women,” says Dr. Qalawun.<br>Gold is one of the most diversified investments compared to other commodities, as investors search for liquid assets that preserve their capital and reduce risks and losses, which has increased the demand for gold in recent times.</h3>
+    <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+    
+    <!-- <script>
+        window.onload = function () {
+        
+        var dataPoints = [];
+        
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            exportEnabled: true,
+            title: {
+                text: "Netflix Stock Price in 2016"
+            },
+            subtitles: [{
+                text: "Weekly Averages"
+            }],
+            axisX: {
+                interval: 1,
+                valueFormatString: "MMM"
+            },
+            axisY: {
+                prefix: "$",
+                title: "Price"
+            },
+            toolTip: {
+                content: "Date: {x}<br /><strong>Price:</strong><br />Open: {y[0]}, Close: {y[3]}<br />High: {y[1]}, Low: {y[2]}"
+            },
+            data: [{
+                type: "candlestick",
+                yValueFormatString: "$##0.00",
+                dataPoints: dataPoints
+            }]
+        });
+        
+        $.get("https://canvasjs.com/data/gallery/javascript/netflix-stock-price.csv", getDataPointsFromCSV);
+        
+        function getDataPointsFromCSV(csv) {
+            var csvLines = points = [];
+            csvLines = csv.split(/[\r?\n|\r|\n]+/);
+            for (var i = 0; i < csvLines.length; i++) {
+                if (csvLines[i].length > 0) {
+                    points = csvLines[i].split(",");
+                    dataPoints.push({
+                        x: new Date(
+                            parseInt(points[0].split("-")[0]),
+                            parseInt(points[0].split("-")[1]),
+                            parseInt(points[0].split("-")[2])
+                        ),
+                        y: [
+                            parseFloat(points[1]),
+                            parseFloat(points[2]),
+                            parseFloat(points[3]),
+                            parseFloat(points[4])
+                        ]
+                    });
+                }
+            }
+            chart.render();
+        }
+        
+        }
+        </script>
+       <br>
+       <script>const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200]
+      ]);</script> -->
+        <br>
+        <br>
+      </section> 
+      <!-- <footer>Almost all statistics are based on scientific research</footer> -->
+        <script src="./789.js"></script>
+        <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="7.js"></script>
+    <script src="78.js"></script>
+
+</body>
+</html>
