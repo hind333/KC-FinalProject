@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gold</title>
+    <link rel="shortcut icon" href="./A0515FF6-D80D-42D3-BA98-2B88BAB6E9CB-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="form.css">
+    <!-- <link rel="stylesheet" href="card.css"> -->
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+           <h1 id="title">حساب الأستثمار الأمن ببنك التمويل الكويتي</h1>
+           <p id="description">Deduction of part of the salary for investment</p>
+        </header>
+        <form id="tip-calculator">
+           <div class="form_wrap">
+              <label for="billamt">Salary percentage:</label>
+              <input type="text" id="billamt" name="billamt" oninput="calculateTip(vol.value, this.value)"class="custom-input">
+           </div>
+           <div class="form_wrap">
+              <label for="vol">Investor Amount:</label>
+              <input type="range" id="vol" name="vol" min="0" max="100"
+                 value="0" class="custom-slider" oninput="calculateTip(this.value, billamt.value)">
+           </div>
+           <div class="form_wrap">
+              <label for="tipperct">Investor Percentage:</label>
+              <input type="text" id="tipperct" name="tipperct" class="custom-input" disabled>
+           </div>
+           <div class="form_wrap">
+              <label for="tipamt">Investor s salary:</label>
+              <input type="text" id="tipamt" name="tipamt" class="custom-input" disabled>
+           </div>
+           <div class="form_wrap">
+              <label for="totalamt">Remaining salary:</label>
+              <input type="text" id="totalamt" name="totalamt" class="custom-input" disabled>
+           </div>
+        </form>
+     </div>
+     
+
+     <!-- <div class="background">
+	
+        <div class="card">
+            <div class="photo"></div>
+            <h2>STEPS</h2>
+            <p>THIS WEEK</p>
+            <div class="chart">
+                <div class="bar bar1"><span>20,000</span></div>
+                <div class="bar bar2"><span>10,000</span></div>
+                <div class="bar bar3"><span>15,000</span></div>
+                <div class="bar bar4"><span>24,000</span></div>
+                <div class="bar bar5"><span>7,000</span></div>
+                <div class="bar bar6"><span>7,000</span></div>
+                <div class="bar bar7"><span>10,000</span></div>
+            </div>
+            <h3>93,000</h3>
+        </div>
+        
+        <div class="info">Click to toggle details view</div>
+    </div> -->
+
+     <script src="./form.js"></script>
+     <!-- <script src="./chaar.js"></script> -->
+</body>
+</html>
